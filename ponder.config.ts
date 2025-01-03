@@ -5,24 +5,24 @@ import { http } from "viem";
 import { SideBetV6Abi } from "./abis/SideBetV6Abi";
 
 export default createConfig({
-  // networks: {
-  //   taiko: {
-  //     chainId: 167000,
-  //     transport: http(process.env.PONDER_RPC_URL_167000),
-  //   },
-  //   telos: {
-  //     chainId: 40,
-  //     transport: http(process.env.PONDER_RPC_URL_TELOS),
-  //   },
-  //   mantle: {
-  //     chainId: 5000,
-  //     transport: http(process.env.PONDER_RPC_URL_5000),
-  //   },
-  //   arbitrumSepolia: {
-  //     chainId: 421614,
-  //     transport: http(process.env.PONDER_RPC_URL_421614),
-  //   }
-  // },
+  networks: {
+    taiko: {
+      chainId: 167000,
+      transport: http(process.env.PONDER_RPC_URL_167000),
+    },
+    telos: {
+      chainId: 40,
+      transport: http(process.env.PONDER_RPC_URL_TELOS),
+    },
+    mantle: {
+      chainId: 5000,
+      transport: http(process.env.PONDER_RPC_URL_5000),
+    },
+    arbitrumSepolia: {
+      chainId: 421614,
+      transport: http(process.env.PONDER_RPC_URL_421614),
+    }
+  },
   contracts: {
     SideBetV6: {
       abi: SideBetV6Abi,
