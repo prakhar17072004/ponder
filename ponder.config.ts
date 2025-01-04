@@ -21,9 +21,6 @@ export default createConfig({
         },
         telos: {
           startBlock: 364808780,
-        },
-        mantle: {
-          startBlock: 69624597,
         }
       }
     },
