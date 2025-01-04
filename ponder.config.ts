@@ -18,10 +18,6 @@ export default createConfig({
       chainId: 5000,
       transport: http(process.env.PONDER_RPC_URL_5000),
     },
-    arbitrumSepolia: {
-      chainId: 421614,
-      transport: http(process.env.PONDER_RPC_URL_421614),
-    }
   },
   contracts: {
     SideBetV6: {
