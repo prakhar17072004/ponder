@@ -13,11 +13,7 @@ export default createConfig({
     telos: {
       chainId: 40,
       transport: http(process.env.PONDER_RPC_URL_TELOS),
-    },
-    mantle: {
-      chainId: 5000,
-      transport: http(process.env.PONDER_RPC_URL_5000),
-    },
+    }
   },
   contracts: {
     SideBetV6: {
