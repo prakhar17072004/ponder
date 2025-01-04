@@ -18,9 +18,6 @@ export default createConfig({
       network: {
         taiko: {
           startBlock: 414069,
-        },
-        telos: {
-          startBlock: 364808780,
         }
       }
     },
