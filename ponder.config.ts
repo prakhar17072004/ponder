@@ -24,9 +24,6 @@ export default createConfig({
         },
         mantle: {
           startBlock: 69624597,
-        },
-        arbitrumSepolia: {
-          startBlock: 85215470,
         }
       }
     },
