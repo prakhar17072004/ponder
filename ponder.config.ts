@@ -9,10 +9,6 @@ export default createConfig({
     taiko: {
       chainId: 167000,
       transport: http(process.env.PONDER_RPC_URL_167000),
-    },
-    telos: {
-      chainId: 40,
-      transport: http(process.env.PONDER_RPC_URL_TELOS),
     }
   },
   contracts: {
