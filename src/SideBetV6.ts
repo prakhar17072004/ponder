@@ -20,7 +20,8 @@ ponder.on("SideBetV6:SideBetEventInitialized", async ({ event, context }) => {
 ponder.on("SideBetV6:Deposited", async ({ event, context }) => {
   const network = context.network.name
   const db = context.db
-  const eventData = await db.find(schema.prediction, {id: `0x${stringToHex(`${event.args.eventCode}${network}`)}`, network:network})
+  const eventData = await db.find(schema.prediction, 
+    {id: `0x${stringToHex(`${event.args.eventCode}${network}`)}`, network:network})
   if(eventData){
       await db.insert(schema.deposit).values({
           network: network,
