@@ -6,6 +6,7 @@ export const NETWORK_ENUM = onchainEnum("network",["taiko"])
 export const prediction = onchainTable("prediction",(t) => ({
     id: t.hex().notNull(),
     network: NETWORK_ENUM("network").notNull(),
+    predictionCode: t.text().notNull(),
     teamA: t.text().notNull(),
     teamB: t.text().notNull(),
     standardToken: t.hex().notNull(),
@@ -21,7 +22,7 @@ export const prediction = onchainTable("prediction",(t) => ({
 export const deposit = onchainTable("deposit", (t) => ({
     id: t.hex().$default(() => `0x${generateRandomHexString()}`),
     network: NETWORK_ENUM("network").notNull(),
-  
+    predictionCode: t.text().notNull(),
     amount: t.bigint().notNull(),
     teamIndex: t.integer().notNull(),
     teamName: t.text().notNull(),
