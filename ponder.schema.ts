@@ -53,7 +53,7 @@ export const deposit = onchainTable("deposit", (t) => ({
   }));
   export const depositRelations = relations(deposit, ({ one }) => ({
     prediction: one(prediction, {
-      fields: [deposit.predictionId, deposit.network],
+      fields: [deposit.EventId, deposit.network],
       references: [prediction.id, prediction.network],
     }),
   }));
