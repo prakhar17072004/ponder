@@ -1,7 +1,7 @@
 import { onchainEnum, onchainTable, primaryKey, relations  } from "ponder";
 import { generateRandomHexString } from "./Utils/helper";
 
-export const NETWORK_ENUM = onchainEnum("network",["taiko"])
+export const NETWORK_ENUM = onchainEnum("network",["holesky"])
 
 export const prediction = onchainTable("prediction",(t) => ({
     id: t.hex().notNull(),
