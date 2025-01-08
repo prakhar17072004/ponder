@@ -36,7 +36,7 @@ ponder.on("SideBetV6:Deposited", async ({ event, context }) => {
       teamName: event.args.teamIndex === 0 ? eventData.teamA : eventData.teamB,
       
       standardToken: eventData.standardToken,
-      txid: event.transaction.hash,
+    
       createAt: event.block.timestamp,
     });
     
