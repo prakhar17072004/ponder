@@ -28,6 +28,7 @@ export const deposit = onchainTable("deposit", (t) => ({
     amount: t.bigint().notNull(),
     teamIndex: t.integer().notNull(),
     teamName: t.text().notNull(),
+    createAt: t.bigint().notNull(),
     
   }),
   (table) => ({
