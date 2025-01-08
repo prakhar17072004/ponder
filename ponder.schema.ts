@@ -12,6 +12,7 @@ export const prediction = onchainTable("prediction",(t) => ({
     standardToken: t.hex().notNull(),
     startTime: t.bigint().notNull(),
     endTime: t.bigint().notNull(),
+    createAt: t.bigint().notNull(),
 
   }),
   (table) => ({
