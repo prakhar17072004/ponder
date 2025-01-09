@@ -1,4 +1,4 @@
-export const SideBetV6 = [
+export const SideBetV6Abi = [
     [
         {
             "inputs": [
