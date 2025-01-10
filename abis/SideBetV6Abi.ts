@@ -1,4 +1,4 @@
-export const SideBetV6Abi = [
+export const SideBetV6Abi = 
     [
         {
             "inputs": [
@@ -809,5 +809,5 @@ export const SideBetV6Abi = [
             "stateMutability": "view",
             "type": "function"
         }
-    ]
+    
 ] as const;

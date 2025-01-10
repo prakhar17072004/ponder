@@ -14,8 +14,8 @@ export default createConfig({
   },
   contracts: {
     SideBetV6: {
-      abi: SideBetV6Abi,
-      address: "0x5a2417ffc4964652dabbf24af6dc72ca43d62c62",
+      abi:SideBetV6Abi,
+      address: "0x5a2417FfC4964652DABBF24Af6dc72cA43D62c62",
       network: {
         holesky: {
           startBlock: 3108205,
