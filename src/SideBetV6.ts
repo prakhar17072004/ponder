@@ -1,6 +1,6 @@
 import { ponder } from "ponder:registry";
 import schema from "ponder:schema";
-// import { stringToHex } from "../Utils/helper";
+import { stringToHex } from "../Utils/helper";
 
 ponder.on("SideBetV6:SideBetEventInitialized", async ({ event, context }) => {
   const network = context.network.name;
